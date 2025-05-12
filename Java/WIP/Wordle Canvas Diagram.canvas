@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"d034704c2d2ee97e","type":"text","text":"Входные данные","x":-500,"y":-360,"width":250,"height":60,"color":"4"},
+		{"id":"c90d38ed29edce4b","type":"text","text":"Интерактор","x":-500,"y":-240,"width":250,"height":60,"color":"1"},
+		{"id":"fa81c813e946d2c3","type":"text","text":"Валидатор","x":-500,"y":-110,"width":250,"height":60,"color":"6"},
+		{"id":"7185abb613a9fdac","type":"text","text":"Игровой цикл","x":-160,"y":-110,"width":250,"height":130,"color":"6"},
+		{"id":"7348392c397edaca","type":"text","text":"Проверка буквы","x":-160,"y":-40,"width":250,"height":60,"color":"6"},
+		{"id":"7d787ef9384aece1","type":"text","text":"Оутпуттер","x":180,"y":-240,"width":250,"height":60,"color":"1"},
+		{"id":"58e670b55d225169","type":"text","text":"Выходные данные","x":170,"y":-360,"width":270,"height":60,"color":"4"},
+		{"id":"46774a25336066d5","type":"text","text":"Хранилище слов","x":-160,"y":-240,"width":250,"height":60,"color":"6"},
+		{"id":"987a0b58b57781d1","type":"text","text":"Пользователь","x":-160,"y":-500,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"76991a852c13bb4b","fromNode":"d034704c2d2ee97e","fromSide":"bottom","toNode":"c90d38ed29edce4b","toSide":"top","label":"Буква"},
+		{"id":"99b9a49f8b0b4248","fromNode":"fa81c813e946d2c3","fromSide":"right","toNode":"7185abb613a9fdac","toSide":"left"},
+		{"id":"b8f393b363beae15","fromNode":"46774a25336066d5","fromSide":"bottom","toNode":"7185abb613a9fdac","toSide":"top","label":"1 случайное слово"},
+		{"id":"e77551f35ef85cbc","fromNode":"7185abb613a9fdac","fromSide":"right","toNode":"7d787ef9384aece1","toSide":"bottom","label":"Результат проверки"},
+		{"id":"82e52b438bbc517a","fromNode":"7d787ef9384aece1","fromSide":"top","toNode":"58e670b55d225169","toSide":"bottom"},
+		{"id":"f50f72b1169f5ed5","fromNode":"c90d38ed29edce4b","fromSide":"left","toNode":"fa81c813e946d2c3","toSide":"left"},
+		{"id":"867f74c88657464c","fromNode":"fa81c813e946d2c3","fromSide":"top","toNode":"c90d38ed29edce4b","toSide":"bottom","label":"Если буква не валидна"},
+		{"id":"3e7e845125550047","fromNode":"c90d38ed29edce4b","fromSide":"right","toNode":"987a0b58b57781d1","toSide":"left"},
+		{"id":"7660831df57ca1c3","fromNode":"987a0b58b57781d1","fromSide":"left","toNode":"d034704c2d2ee97e","toSide":"top"},
+		{"id":"f6dd01f2f2a77d38","fromNode":"58e670b55d225169","fromSide":"top","toNode":"987a0b58b57781d1","toSide":"right"}
+	]
+}
